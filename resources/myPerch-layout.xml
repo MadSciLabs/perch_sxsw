@@ -1,4 +1,4 @@
-
+<?xml version="1.0"?>
 <root>
 
     <!--
@@ -14,59 +14,63 @@
     <image file="images/hole_spotlight.png">
         <position>Point(0,0,0)</position>
     </image>
- -->
+    -->
 
-    
-    <position>Point(0,0,0)</position>
+	<perchObject>
 
-    <instance class="tile">
-        <position input="tilePos">Point(50,50,0)</position>
-        <name input="tileName">one</name>
-    </instance>
-    <instance class="tile">
-        <position input="tilePos">Point(150,50,0)</position>
-        <name input="tileName">two</name>
-    </instance>
-    <instance class="tile">
-        <position input="tilePos">Point(250,50,0)</position>
-        <name input="tileName">three</name>
-    </instance>
-    <instance class="tile">
-        <position input="tilePos">Point(350,50,0)</position>
-        <name input="tileName">four</name>
-    </instance>
-    <instance class="tile">
-        <position input="tilePos">Point(450,50,0)</position>
-        <name input="tileName">five</name>
-    </instance>
-    <instance class="tile">
-        <position input="tilePos">Point(550,50,0)</position>
-        <name input="tileName">six</name>
-    </instance>
-    <instance class="tile">
-        <position input="tilePos">Point(650,50,0)</position>
-        <name input="tileName">seven</name>
-    </instance>
-    <instance class="tile">
-        <position input="tilePos">Point(750,50,0)</position>
-        <name input="tileName">eight</name>
-    </instance>
-    <instance class="tile">
-        <position input="tilePos">Point(850,50,0)</position>
-        <name input="tileName">nine</name>
-    </instance>
-    <instance class="tile">
-        <position input="tilePos">Point(950,50,0)</position>
-        <name input="tileName">ten</name>
-    </instance>
-    <instance class="tile">
-        <position input="tilePos">Point(1050,50,0)</position>
-        <name input="tileName">eleven</name>
-    </instance>
-    <instance class="tile">
-        <position input="tilePos">Point(1150,50,0)</position>
-        <name input="tileName">twelve</name>
-    </instance>
+	<content>	
+
+    		<instance class="tileRow">
+        		<position input="tileRowPos">Point(0,0,0)</position>
+    		</instance>
+    		<instance class="tileRow">
+        		<position input="tileRowPos">Point(0,100,0)</position>
+    		</instance>
+    		<instance class="tileRow">
+        		<position input="tileRowPos">Point(0,200,0)</position>
+    		</instance>
+    		<instance class="tileRow">
+        		<position input="tileRowPos">Point(0,300,0)</position>
+    		</instance>
+    		<instance class="tileRow">
+        		<position input="tileRowPos">Point(0,400,0)</position>
+    		</instance>
+    		<instance class="tileRow">
+        		<position input="tileRowPos">Point(0,500,0)</position>
+    		</instance>
+    		<instance class="tileRow">
+        		<position input="tileRowPos">Point(0,600,0)</position>
+    		</instance>
+    		<instance class="tileRow">
+        		<position input="tileRowPos">Point(0,700,0)</position>
+    		</instance>
+    		<instance class="tileRow">
+        		<position input="tileRowPos">Point(0,800,0)</position>
+    		</instance>
+
+		<instance class="videoSwitcher" name="video_switch">
+        		<position input="switch_position">Point(640,400,0)</position>
+                        <file input="content1_image">images/content_1.png</file>
+                        <file input="content2_image">images/content_2.png</file>
+		</instance>
+
+		<instance class="logoButton" replace="1">
+                        <file input="content_image">images/logo_1.png</file>
+        		<position input="logoPosition">Point(120,700,0)</position>
+		</instance>
+
+		<instance class="logoButton" replace="2">
+                        <file input="content_image">images/logo_2.png</file>
+        		<position input="logoPosition">Point(130,100,0)</position>
+		</instance>
+	</content>
+
+	<event type="onInit">
+		<hide>video_switch</hide>
+	</event>
+
+	</perchObject>
+
 
     <!-- PRODUCT 1 
     <instance class="product_toggle_razor">
